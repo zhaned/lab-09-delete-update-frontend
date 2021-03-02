@@ -19,19 +19,14 @@ export default class App extends Component {
               render={(routerProps) => <ListPage {...routerProps} />}
             />
             <Route
-              path="/search"
+              path="/create"
               exact
               render={(routerProps) => <CreatePage {...routerProps} />}
             />
             <Route
-              path="/cpuData/:id"
+              path="/cpuData/:cpuId"
               exact
               render={(routerProps) => <DetailPage {...routerProps} />}
-            />
-            <Route
-              path="/pokemon/:id"
-              exact
-              render={(routerProps) => <PokemonDetail {...routerProps} />}
             />
           </Switch>
         </Router>

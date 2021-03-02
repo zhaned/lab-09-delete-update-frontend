@@ -1,6 +1,6 @@
 import request from 'superagent';
 
-const URL = 'https://arcane-bayou-88812.herokuapp.com/cpuData';
+const URL = 'https://arcane-bayou-88812.herokuapp.com';
 
 export async function getItems() {
   const { body } = await request.get(`${URL}/cpuData`); //destructering so its not mad ugly
@@ -39,3 +39,5 @@ export async function getCategories() {
 
   return data.body; //superagent makes the body property
 }
+
+export const getCategoryId = (cpu, categories) => categories.find(category => cpu[0].category === category.name).id;
