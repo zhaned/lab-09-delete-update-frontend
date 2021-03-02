@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.active{
+  color: cyan;
+  font-family: cursive;
+}
+
+.cpu{
+  border: solid 2px black;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
